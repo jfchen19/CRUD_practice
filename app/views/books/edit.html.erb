@@ -1,0 +1,16 @@
+<h1>編輯書本資料</h1>
+
+<%= form_for(@book) do |f| %>
+  <%= f.label :name, "書名" %>
+  <%= f.text_field :name %>
+
+  <%= f.label :author, "作者" %>
+  <%= f.text_field :author %>
+
+  <%= f.label :price, "售價" %>
+  <%= f.text_field :price %>
+
+  <%= f.submit%>
+<% end %>
+<br>
+<%= link_to "返回書本列表", "/books" %>
